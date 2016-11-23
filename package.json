@@ -1,0 +1,24 @@
+{
+  "name": "webpacklessons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "home.js",
+  "dependencies": {
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set NODE_ENV=development&&webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpe4a/TryWebpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpe4a/TryWebpack/issues"
+  },
+  "homepage": "https://github.com/rpe4a/TryWebpack#readme"
+}
