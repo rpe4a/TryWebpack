@@ -5,6 +5,7 @@
   "main": "home.js",
   "dependencies": {
     "babel-runtime": "^6.18.0",
+    "lodash": "^4.17.2",
     "webpack": "^1.13.3"
   },
   "devDependencies": {

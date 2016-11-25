@@ -5,7 +5,7 @@ export default function (message) {
         console.log(message);
         console.log(NODE_ENV);
     }
-
+    
     return new window.Promise((resolve) => {
         alert(message)
         resolve();
