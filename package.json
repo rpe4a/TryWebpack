@@ -5,8 +5,12 @@
   "main": "home.js",
   "dependencies": {
     "babel-runtime": "^6.18.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "lodash": "^4.17.2",
-    "webpack": "^1.13.3"
+    "resolve-url-loader": "^1.6.0",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -16,11 +20,15 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
-    "babel-runtime": "^6.18.0"
+    "babel-runtime": "^6.18.0",
+    "html-webpack-plugin": "^2.24.1"
   },
   "scripts": {
-    "test": "set NODE_ENV=development&&webpack",
-    "start": "set NODE_ENV=production&&webpack"
+    "dev": "if exist dist\\js (rmdir dist\\js /s /q) else (set NODE_ENV=development&&webpack)",
+    "prod": "if exist dist\\js (rmdir dist\\js /s /q) else (mkdir dist\\js) & set NODE_ENV=production&&webpack",
+    "hot": "webpack-dev-server",
+    "start": "node server.js",
+    "test": "tap test/*.js"
   },
   "repository": {
     "type": "git",
